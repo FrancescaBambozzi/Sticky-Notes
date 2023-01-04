@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: aliceblue;
+}
+
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
+
+.notes-list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  margin: 40px;
+}
+
+.app-header__title {
+  margin: 10px 20px 0px;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 45px;
+}
+
+.app-header__controls {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 10px;
+}
+
+.search,
+.add-new {
+  font-size: 14px;
+  padding: 5px;
+  margin: 8px;
+}
+
+.search {
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.add-new {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  font-weight: bolder;
+  outline: none;
+}
+
+.note {
+  font-family: "Permanent Marker", cursive;
+  height: 250px;
+  width: 250px;
+  float: left;
+  display: block;
+  position: relative;
+  padding: 1em;
+  margin: 5px;
+  background: linear-gradient(top, rgba(0, 0, 0, .05), rgba(0, 0, 0, .25));
+  background-color: #f1e000;
+  box-shadow: 5px 5px 10px -2px rgba(33, 33, 33, .3);
+  transform: rotate(-6deg);
+  transition: transform .15s;
+  z-index: 1;
+}
+
+/* Tilting the notes */
+ul li:nth-child(even) {
+  transform: rotate(5deg);
+  position: relative;
+  top: 5px;
+  background-color: #f3f3f3;
+}
+
+ul li:nth-child(3n) {
+  transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+  background-color: #450dc6;
+}
+
+ul li:nth-child(5n) {
+  transform: rotate(-6deg);
+  position: relative;
+  top: -10px;
+  background-color: #e426b1;
+
+}
+
+/* Make the note Zoom on hover */
+ul li:hover, ul li:focus {
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+  transform: scale(1.23);
+  position: relative;
+  z-index: 5;
+}
+
+.note__title,
+.note__description {
+  font-family: "Permanent Marker", cursive;
+  width: 100%;
+  padding: 8px 14px;
+  background: transparent;
+  border: none;
+}
+
+.note__title {
+  border-bottom: 0.5px solid black;
+}
+
+.note__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.note__description {
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.note__delete {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  color: lightgrey;
+  padding: 5px;
+}
+
+.note__delete:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* Desktop and Tablets layout */
+@media only screen and (min-width: 600px) {
+  .notes-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin: 60px;
+  }
+
+  .note {
+    height: 280px;
+    width: 280px;
+  }
+}

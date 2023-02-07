@@ -7,6 +7,24 @@ class App extends Component {
     notes: [],
     searchText: "",
   };
+
+  // save the state to the browser’s local storage each time the notes data is updated
+  componentDidUpdate() {
+    const localStateString = JSON.stringify(this.state);
+    localStorage.setItem("localStateString", localStateString);
+  }
+
+  //pull the saved value when the UI is reopened
+  componentDidMount(){
+    const localStateString = localStorage.getItem("localStateString");
+
+    //make data available between sessions by setting the state from the previous one to the new one
+    if (localStateString){
+      const savedState = JSON.parse(localStateString);
+      this.setState(savedState);
+    }
+  }
+
   addNote = () => {
     const newNote = {
       id: Date.now(),

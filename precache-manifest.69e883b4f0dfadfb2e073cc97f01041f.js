@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "93f21d9f12e59766822c",
-    "url": "/Sticky-Notes/static/css/main.333dc25d.chunk.css"
+    "revision": "32cffbbc668dba992504",
+    "url": "/Sticky-Notes/static/css/main.3d94b29b.chunk.css"
   },
   {
-    "revision": "93f21d9f12e59766822c",
-    "url": "/Sticky-Notes/static/js/main.606a5e91.chunk.js"
+    "revision": "32cffbbc668dba992504",
+    "url": "/Sticky-Notes/static/js/main.9802e6be.chunk.js"
   },
   {
     "revision": "b15224541b42275ca52a",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/Sticky-Notes/static/js/2.88145d45.chunk.js"
   },
   {
-    "revision": "f9ee963bd0d09cbbd5cc854d20417265",
+    "revision": "fcd499d8133e7feb074e18b9acc9c887",
     "url": "/Sticky-Notes/index.html"
   }
 ];

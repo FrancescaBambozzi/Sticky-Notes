@@ -1,5 +1,5 @@
 {
-  "main.css": "/Sticky-Notes/static/css/main.69fc065c.chunk.css",
+  "main.css": "/Sticky-Notes/static/css/main.d8056057.chunk.css",
   "main.js": "/Sticky-Notes/static/js/main.b8442441.chunk.js",
   "main.js.map": "/Sticky-Notes/static/js/main.b8442441.chunk.js.map",
   "runtime~main.js": "/Sticky-Notes/static/js/runtime~main.c1a6b2e5.js",
@@ -7,7 +7,7 @@
   "static/js/2.88145d45.chunk.js": "/Sticky-Notes/static/js/2.88145d45.chunk.js",
   "static/js/2.88145d45.chunk.js.map": "/Sticky-Notes/static/js/2.88145d45.chunk.js.map",
   "index.html": "/Sticky-Notes/index.html",
-  "precache-manifest.085e75ff3e108014bf0456149a196fd4.js": "/Sticky-Notes/precache-manifest.085e75ff3e108014bf0456149a196fd4.js",
+  "precache-manifest.3528ed708fd2433024598a10dd66038c.js": "/Sticky-Notes/precache-manifest.3528ed708fd2433024598a10dd66038c.js",
   "service-worker.js": "/Sticky-Notes/service-worker.js",
-  "static/css/main.69fc065c.chunk.css.map": "/Sticky-Notes/static/css/main.69fc065c.chunk.css.map"
+  "static/css/main.d8056057.chunk.css.map": "/Sticky-Notes/static/css/main.d8056057.chunk.css.map"
 }

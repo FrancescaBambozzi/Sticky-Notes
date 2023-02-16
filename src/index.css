@@ -89,7 +89,7 @@ ul li:nth-child(3n) {
   background-color: #a7d4ff;
 }
 
-ul li:nth-child(5n) {
+ul li:nth-child(4n) {
   transform: rotate(-4deg);
   position: relative;
   top: -10px;
